@@ -114,3 +114,37 @@ nav > ul > li:nth-last-child(1) {
 	width: 24px;
 	height: 24px;
 }
+
+/* styling the trend section */
+.container__trend {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 30px;
+}
+.trend {
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+}
+
+:where(.trend > .right__description) {
+	padding: 0 !important;
+}
+.trend__detaill {
+	display: flex;
+	column-gap: 15px;
+}
+.trend__detaill > img {
+	object-fit: contain;
+	height: 100px;
+}
+.trend__totale {
+	background-color: var(--violet);
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 160%;
+	border-radius: 20px;
+	display: grid;
+	place-items: center;
+	width: 100%;
+}
