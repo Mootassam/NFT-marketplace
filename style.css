@@ -1,0 +1,33 @@
+nav {
+	display: flex;
+	justify-content: space-between;
+	width: min(1180px, 90%);
+	margin-inline: auto;
+	align-items: center;
+	padding: 20px 0;
+}
+
+nav > ul {
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav > ul > li:nth-last-child(1) {
+	background-color: var(--violet);
+}
+
+/* style the button  */
+.button__violet {
+	padding: 20px 50px;
+	color: var(--violet);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 30px;
+	gap: 12px;
+	border-radius: 20px;
+	color: var(--white);
+}

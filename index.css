@@ -1,0 +1,72 @@
+*,
+::after,
+::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	/* primary color  */
+	--white: #fff;
+	--background: #2b2b2b;
+	--violet: #a259ff;
+
+	/* secondary Color */
+
+	--gray: #3b3b3b;
+	--gray__text: #858584;
+
+	/* fontFamily */
+
+	--ff_: "Work Sans";
+}
+
+body {
+	background-color: var(--background);
+	color: var(--white);
+	font-family: var(--ff_);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+}
+
+h1 {
+	font-weight: 600;
+	font-size: 67px;
+	line-height: 110%;
+}
+h2 {
+	font-weight: 600;
+	font-size: 38px;
+	line-height: 120%;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 140%;
+}
+
+span {
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 160%;
+}
+
+p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+}
+
+ul {
+	list-style: none;
+}
+li {
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+}
