@@ -18,10 +18,29 @@ nav > ul > li:nth-last-child(1) {
 	background-color: var(--violet);
 }
 
+/* style the section  */
+.container {
+	width: min(1050px, 100%);
+	margin-inline: auto;
+	padding: 80px 0;
+}
+
+.container__header {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	padding-bottom: 60px;
+}
+.container__hero {
+	display: flex;
+	gap: 30px;
+	justify-content: space-between;
+}
+
 /* style the button  */
 .button__violet {
 	padding: 20px 50px;
-	color: var(--violet);
+	background-color: var(--violet);
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -30,4 +49,68 @@ nav > ul > li:nth-last-child(1) {
 	gap: 12px;
 	border-radius: 20px;
 	color: var(--white);
+	width: max-content;
+	cursor: pointer;
+}
+
+/* stlying the hero section left */
+.hero__left {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+.left__title {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+.left__title > h1 {
+	padding-right: 10px;
+}
+.hero__stat {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+.stat__number {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 140%;
+	font-family: var(--ff_2);
+}
+.stat__desc {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 23.99px;
+	line-height: 160%;
+}
+
+/* styling the right section  */
+.hero__right {
+	background-color: var(--gray);
+	border-radius: 0px 0px 20px 20px;
+}
+.right__description {
+	padding: 22px 20px;
+	justify-content: flex-start;
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+}
+.nft__tilte {
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 140%;
+}
+.nft__user {
+	display: flex;
+	column-gap: 12px;
+	align-items: center;
+	justify-content: flex-start;
+}
+.nft__user > img {
+	width: 24px;
+	height: 24px;
 }

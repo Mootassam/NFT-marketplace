@@ -15,11 +15,13 @@
 	/* secondary Color */
 
 	--gray: #3b3b3b;
+
 	--gray__text: #858584;
 
 	/* fontFamily */
 
 	--ff_: "Work Sans";
+	--ff_2: "Space Mono";
 }
 
 body {
@@ -69,4 +71,8 @@ li {
 }
 a {
 	text-decoration: none;
+}
+
+img {
+	cursor: pointer;
 }
