@@ -382,10 +382,13 @@ nav > ul > li:nth-last-child(1) {
   padding: 19px 50px;
   border-radius: 20px;
   width: 211px;
-
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 140%;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
