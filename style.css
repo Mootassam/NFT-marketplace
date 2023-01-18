@@ -663,4 +663,5 @@ label {
 }
 .marketplace__search input {
 	color: var(--white);
+	width: 100%;
 }
