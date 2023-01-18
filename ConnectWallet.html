@@ -4,7 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Create Account</title>
+		<title>Connect to wallet</title>
+
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="index.css" />
 		<link
@@ -18,61 +19,57 @@
 	<body>
 		<header>
 			<nav>
-				<a href="/index.html">
-					<img src="/assets/image/logo.png" alt="" />
-				</a>
+				<a href="/index.html"><img src="/assets/image/logo.png" alt="" />	</a>
 				<ul>
+				
+
 					<li>Marketplace</li>
+			
+
 					<li>Rankings</li>
-					 <li> <a href="/ConnectWallet.html">Connect a wallet</a></li>
-					<li class="button__violet">
-						<img src="/assets/image/User.png" alt="" />
-						Signup
-					</li>
+					<a href="/ConnectWallet.html"> <li>Connect a wallet</li> </a>
+					<a href="/Signup.html">
+						<li class="button__violet">
+							<img src="/assets/image/User.png" alt="" />
+							Signup
+						</li>
+					</a>
 				</ul>
 			</nav>
 		</header>
 
-		<section class="app__signup">
+
+        <section class="app__signup">
 			<div class="signup">
 				<div class="signup__left">
 					<img src="/assets/image/Signup.png" alt="" />
 				</div>
 				<div class="signup__right">
 					<div class="signup__title">
-						<h1>Create account</h1>
+						<h1>Connect wallet</h1>
 						<div class="signup__detaill">
-							Welcome! enter your details and start creating, collecting and
-							selling NFTs.
+                            Choose a wallet you want to connect. There are several wallet providers.
 						</h3>
 					</div>
-					<div class="signup__form">
+					<div class="signup__wallet">
 
-                    <div class="form__group">
-<img src="/assets/image/Userg.png" alt="">
-                        <input type="text" placeholder="Username">
-                    </div>
+                        <div class="wallet">
+                            <img src="/assets/image/metamaskfox.png" alt="">
+<h3>Metamask</h3>
+                        </div>
 
-                    <div class="form__group">
-                        <img src="/assets/image/EnvelopeSimple.png" alt="">
-                        <input type="text" placeholder="Email Address">
-                    </div>
-
-                    <div class="form__group">
-                        <img src="/assets/image/LockKey.png" alt="">
-                        <input type="text" placeholder="Password">
-                    </div>
-
-                    <div class="form__group">
-                        <img src="/assets/image/LockKey.png" alt="">
-
-                        <input type="text" placeholder="Confirm Password">
-                    </div>
-                    </div>
-
-
-                    <div class="button__form">
-                        Create account
+                        
+                        <div class="wallet">
+                            <img src="/assets/image/WalletConnect.png" alt="">
+<h3>Wallet Connect</h3>
+                        </div>
+                        
+                        <div class="wallet">
+                            <img src="/assets/image/Coinbase.png" alt="">
+<h3>Coinbase</h3>
+                        </div>
+        
+                  
                     </div>
 				</div>
 			</div>
@@ -82,6 +79,7 @@
 			<div class="app__footer">
 				<div class="footer__content">
 					<div class="footer__title">
+
 						<img src="/assets/image/logo.png" alt="" srcset="" />
 					</div>
 					<label for="">NFT marketplace UI created with Anima for Figma.</label
