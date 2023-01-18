@@ -88,6 +88,7 @@ input {
 	font-size: 16px;
 	line-height: 140%;
 	color: #2b2b2b;
+	background-color: transparent;
 }
 input:focus {
 	outline: none;

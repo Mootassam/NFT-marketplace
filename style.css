@@ -648,3 +648,19 @@ label {
 	justify-content: flex-start;
 	align-items: center;
 }
+
+/* styling the marketPlace  */
+
+.marketplace__search {
+	border: 1px solid #3b3b3b;
+	border-radius: 20px;
+	padding: 19px 20px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	align-items: center;
+	column-gap: 26px;
+}
+.marketplace__search input {
+	color: var(--white);
+}
