@@ -305,11 +305,109 @@ nav > ul > li:nth-last-child(1) {
 			#a259ff 100%
 		),
 		url("/assets/image/NFT.png");
-	width: 100%;
+
 	height: 640px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
+}
+
+.bg {
+	width: min(1050px, 100%);
+	margin-inline: auto;
+}
+.bg > div {
+	display: flex;
+	align-items: flex-end;
+	position: absolute;
+	bottom: 60px;
+	width: 1050px;
+	justify-content: space-between;
+}
+/* *****styling the bg__lefft***** */
+.bg__left {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+
+.bg__left__top {
+	background-color: var(--background);
+	padding: 10px 20px;
+	column-gap: 12px;
+	border-radius: 20px;
+	width: max-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bg__title {
+	font-family: "Work Sans";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 51px;
+	line-height: 110%;
+}
+
+.bg__button {
+	background-color: var(--white);
+	padding: 19px 50px;
+	width: max-content;
+	color: var(--background);
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 140%;
+	border-radius: 20px;
+	gap: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* styling the bg__right */
+
+.bg__right {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	background: rgba(59, 59, 59, 0.5);
+	backdrop-filter: blur(5px);
+	border-radius: 20px;
+	row-gap: 10px;
+}
+
+.bg__right p {
+	font-family: "Space Mono";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 110%;
+	color: var(--white);
+}
+.bg__date {
+	display: flex;
+	font-family: "Space Mono";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 38px;
+	line-height: 120%;
+	color: var(--white);
+	column-gap: 10px;
+}
+.date {
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+}
+
+.date__text {
+	font-family: "Space Mono";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 110%;
 }
 
 /* styling the how it works */
