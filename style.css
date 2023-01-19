@@ -651,6 +651,15 @@ label {
 
 /* styling the marketPlace  */
 
+.marketplace__title {
+	font-family: "Work Sans";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 51px;
+	line-height: 110%;
+	padding-bottom: 10px;
+}
+
 .marketplace {
 	border-top: 1px solid #3b3b3b;
 }
