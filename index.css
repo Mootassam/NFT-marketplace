@@ -93,3 +93,29 @@ input {
 input:focus {
 	outline: none;
 }
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+tbody {
+	display: grid;
+	grid-auto-flow: row;
+	row-gap: 20px;
+}
+tr {
+	display: flex;
+	border-radius: 20px;
+	padding: 12px 20px;
+	background-color: #3b3b3b;
+	border-radius: 20px;
+	gap: 20px;
+	align-items: center;
+}
+
+th,
+td {
+	text-align: start;
+	display: flex;
+	column-gap: 20px;
+	align-items: center;
+}
