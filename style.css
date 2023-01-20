@@ -894,3 +894,58 @@ label {
 	color: #858584;
 	padding-bottom: 10px;
 }
+
+.detaill__ {
+	background-image: url(/assets/image/artist/Detaill.png);
+	height: 560px;
+	background-repeat: no-repeat;
+	width: 100%;
+	width: min(1280px, 100%);
+	margin-inline: auto;
+}
+
+.artist__description {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+
+.artit__url {
+	display: flex;
+	flex-direction: column;
+	row-gap: 13px;
+}
+.artit__url > span {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+}
+
+.artit__url > span p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 160%;
+}
+
+.tags {
+	display: flex;
+	column-gap: 20px;
+}
+.tag {
+	padding: 12px 30px;
+	background-color: #3b3b3b;
+	border-radius: 20px;
+}
+
+.artist__list {
+	padding: 60px 0 80px;
+}
+.marketplace__list > div {
+	width: min(1050px, 100%);
+	margin-inline: auto;
+}
+
+.artist__list > .container__more > .more {
+	background-color: var(--gray) !important;
+}
