@@ -794,11 +794,11 @@ label {
 		url(/assets/image/artist/artist.png);
 	background-position: center;
 	background-repeat: no-repeat;
-	width: 100%;
 	height: 320px;
 	width: min(1280px, 100%);
 	margin-inline: auto;
 }
+
 .profile {
 	position: relative;
 	left: 115px;
@@ -809,7 +809,7 @@ label {
 	display: flex;
 	width: min(1050px, 100%);
 	margin-inline: auto;
-	padding: 40px 0;
+	padding: 80px 0;
 	align-items: flex-start;
 	justify-content: space-between;
 }
@@ -882,4 +882,15 @@ label {
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 160%;
+}
+
+.artist__subheader {
+	font-family: "Space Mono";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 160%;
+	text-transform: capitalize;
+	color: #858584;
+	padding-bottom: 10px;
 }
