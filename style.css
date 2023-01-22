@@ -908,10 +908,16 @@ label {
   margin-inline: auto;
 }
 
+/* styling the detaill Artist  */
+
 .artist__description {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+}
+
+.artist__description > p {
+  font-size: 22px !important;
 }
 
 .artit__url {
