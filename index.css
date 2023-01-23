@@ -119,3 +119,52 @@ td {
 	column-gap: 20px;
 	align-items: center;
 }
+
+@media screen and (max-width: 834px) {
+	h1 {
+		font-weight: 600;
+		font-size: 38px;
+		line-height: 120%;
+	}
+
+	h2 {
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 140%;
+	}
+	h3 {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 140%;
+	}
+
+	span {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 140%;
+	}
+
+	p {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22.4px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	h1 {
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 120%;
+	}
+	h2 {
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 140%;
+	}
+	h3 {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 140%;
+	}
+}
