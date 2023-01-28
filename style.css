@@ -22,12 +22,12 @@ nav > ul > li:nth-last-child(1) {
   display: none;
 }
 
-/* styling the responsive nav */
+/* Styles for the tablet */
 
-@media screen and (max-width: 834px) {
+@media (min-width: 834px) and (max-width: 1279px) {
   nav {
-    padding: 15px auto;
-    max-width: 690px;
+    padding: 15px 30px;
+
     margin: auto;
   }
   nav > ul {
@@ -38,9 +38,17 @@ nav > ul > li:nth-last-child(1) {
   }
 }
 
-@media screen and (max-width: 375px) {
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
   nav {
     padding: 15px 10px;
+  }
+  nav > ul {
+    display: none;
+  }
+  .menue__mobile {
+    display: block;
   }
 }
 
@@ -58,9 +66,9 @@ nav > ul > li:nth-last-child(1) {
   padding-bottom: 60px;
 }
 .container__hero {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
   gap: 30px;
-  justify-content: space-between;
 }
 
 /* style the button  */
@@ -89,6 +97,44 @@ nav > ul > li:nth-last-child(1) {
   border: 2px solid #a259ff;
   border-radius: 20px;
   width: max-content;
+}
+
+@media (min-width: 834px) and (max-width: 1279px) {
+  .container {
+    padding: 40px 0;
+    margin-inline: auto;
+    max-width: 690px;
+  }
+
+  .container__header {
+    padding-bottom: 40px;
+  }
+  .container__hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    gap: 30px;
+  }
+}
+
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
+  .container {
+    max-width: 315px;
+    margin-inline: auto;
+    padding: 40px 0;
+  }
+  .container__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-bottom: 20px;
+  }
+  .container__hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    gap: 40px;
+  }
 }
 
 /* stlying the hero section left */
@@ -124,6 +170,49 @@ nav > ul > li:nth-last-child(1) {
   line-height: 160%;
 }
 
+/* Styles for the tablet */
+@media (min-width: 834px) and (max-width: 1279px) {
+  .stat__number {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 160%;
+    font-family: var(--ff_2);
+  }
+  .stat__desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
+  .stat__number {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 160%;
+    font-family: var(--ff_2);
+  }
+  .stat__desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .button__violet {
+    width: 100%;
+    order: 3;
+    position: relative;
+  }
+  .left__title {
+    row-gap: 10px;
+  }
+}
+
 /* styling the right section  */
 .hero__right {
   background-color: var(--gray);
@@ -152,17 +241,26 @@ nav > ul > li:nth-last-child(1) {
   width: 24px;
   height: 24px;
 }
+/* Styles for the tablet */
+@media (min-width: 834px) and (max-width: 1279px) {
+}
+
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
+}
 
 /* styling the trend section */
 .container__trend {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .trend {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
+  width: max-content;
 }
 
 :where(.trend > .right__description) {
@@ -185,6 +283,23 @@ nav > ul > li:nth-last-child(1) {
   display: grid;
   place-items: center;
   width: 100%;
+}
+/* Styles for the tablet */
+@media (min-width: 834px) and (max-width: 1279px) {
+  .container__trend > div:nth-child(3) {
+    display: none;
+  }
+}
+
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
+  .container__trend > div:nth-child(2) {
+    display: none;
+  }
+  .container__trend > div:nth-child(3) {
+    display: none;
+  }
 }
 
 /* styling the creator section */
@@ -247,6 +362,15 @@ nav > ul > li:nth-last-child(1) {
   font-family: var(--ff_2);
 }
 
+/* Styles for the tablet */
+@media (min-width: 834px) and (max-width: 1279px) {
+}
+
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
+}
+
 /* stlying the browse  */
 
 .container__browse {
@@ -288,6 +412,15 @@ nav > ul > li:nth-last-child(1) {
   padding: 20px;
 }
 
+/* Styles for the tablet */
+@media (min-width: 834px) and (max-width: 1279px) {
+}
+
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
+}
+
 /* styling the more section  */
 
 .container__more {
@@ -319,6 +452,15 @@ nav > ul > li:nth-last-child(1) {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
+}
+
+/* Styles for the tablet */
+@media (min-width: 834px) and (max-width: 1279px) {
+}
+
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
 }
 
 /* styling the bg */
@@ -391,6 +533,15 @@ nav > ul > li:nth-last-child(1) {
   align-items: center;
 }
 
+/* Styles for the tablet */
+@media (min-width: 834px) and (max-width: 1279px) {
+}
+
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
+}
+
 /* styling the bg__right */
 
 .bg__right {
@@ -435,6 +586,15 @@ nav > ul > li:nth-last-child(1) {
   line-height: 110%;
 }
 
+/* Styles for the tablet */
+@media (min-width: 834px) and (max-width: 1279px) {
+}
+
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
+}
+
 /* styling the how it works */
 
 .container__works {
@@ -453,6 +613,15 @@ nav > ul > li:nth-last-child(1) {
   text-align: center;
   row-gap: 10px;
   height: 439px;
+}
+
+/* Styles for the tablet */
+@media (min-width: 834px) and (max-width: 1279px) {
+}
+
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
 }
 
 /* styling the .join__us */
@@ -518,6 +687,15 @@ nav > ul > li:nth-last-child(1) {
   gap: 15px;
 }
 
+/* Styles for the tablet */
+@media (min-width: 834px) and (max-width: 1279px) {
+}
+
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
+}
+
 /* styling the footer  */
 
 footer {
@@ -568,6 +746,15 @@ label {
   color: #cccccc;
 }
 
+/* Styles for the tablet */
+@media (min-width: 834px) and (max-width: 1279px) {
+}
+
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
+}
+
 /* styling the copywrite  */
 
 .app__copywrite {
@@ -585,6 +772,15 @@ label {
   font-size: 12px;
   line-height: 110%;
   color: #cccccc;
+}
+
+/* Styles for the tablet */
+@media (min-width: 834px) and (max-width: 1279px) {
+}
+
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
 }
 
 /* styling the singup */
@@ -659,6 +855,15 @@ label {
   cursor: pointer;
 }
 
+/* Styles for the tablet */
+@media (min-width: 834px) and (max-width: 1279px) {
+}
+
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
+}
+
 /* styling the singup from wallet */
 .signup__wallet {
   display: flex;
@@ -677,6 +882,14 @@ label {
   max-width: 320px;
   justify-content: flex-start;
   align-items: center;
+}
+/* Styles for the tablet */
+@media (min-width: 834px) and (max-width: 1279px) {
+}
+
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
 }
 
 /* styling the marketPlace  */
@@ -754,6 +967,14 @@ label {
   margin-inline: auto;
 }
 
+/* Styles for the tablet */
+@media (min-width: 834px) and (max-width: 1279px) {
+}
+
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
+}
 /* styling the creator List  && Ranking*/
 
 .creator__hover {
@@ -813,6 +1034,14 @@ label {
   width: min(1050px, 100%);
   margin-inline: auto;
 }
+/* Styles for the tablet */
+@media (min-width: 834px) and (max-width: 1279px) {
+}
+
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
+}
 
 /* stlying list of creators  */
 .creators {
@@ -869,6 +1098,14 @@ label {
   max-height: 30px;
 }
 
+/* Styles for the tablet */
+@media (min-width: 834px) and (max-width: 1279px) {
+}
+
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
+}
 /* styling the artist Page  */
 
 .bg__artist {
@@ -990,6 +1227,15 @@ label {
   margin-inline: auto;
 }
 
+/* Styles for the tablet */
+@media (min-width: 834px) and (max-width: 1279px) {
+}
+
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
+}
+
 /* styling the detaill Artist  */
 
 .artist__description {
@@ -1040,4 +1286,13 @@ label {
 
 .artist__list > .container__more > .more {
   background-color: var(--gray) !important;
+}
+
+/* Styles for the tablet */
+@media (min-width: 834px) and (max-width: 1279px) {
+}
+
+/* Styles for the mobile */
+
+@media (max-width: 833px) {
 }

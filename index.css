@@ -1,170 +1,183 @@
 *,
 ::after,
 ::before {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-	/* primary color  */
-	--white: #fff;
-	--background: #2b2b2b;
-	--violet: #a259ff;
+  /* primary color  */
+  --white: #fff;
+  --background: #2b2b2b;
+  --violet: #a259ff;
 
-	/* secondary Color */
+  /* secondary Color */
 
-	--gray: #3b3b3b;
+  --gray: #3b3b3b;
 
-	--gray__text: #858584;
+  --gray__text: #858584;
 
-	/* fontFamily */
+  /* fontFamily */
 
-	--ff_: "Work Sans";
-	--ff_2: "Space Mono";
+  --ff_: "Work Sans";
+  --ff_2: "Space Mono";
 }
 
 body {
-	background-color: var(--background);
-	color: var(--white);
-	font-family: var(--ff_);
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 140%;
+  background-color: var(--background);
+  color: var(--white);
+  font-family: var(--ff_);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
 }
 
 h1 {
-	font-weight: 600;
-	font-size: 67px;
-	line-height: 110%;
+  font-weight: 600;
+  font-size: 67px;
+  line-height: 110%;
 }
 h2 {
-	font-weight: 600;
-	font-size: 38px;
-	line-height: 120%;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 120%;
 }
 
 h3 {
-	font-weight: 600;
-	font-size: 22px;
-	line-height: 140%;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
 }
 
 span {
-	font-weight: 400;
-	font-size: 22px;
-	line-height: 160%;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
 }
 
 p {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 140%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 li {
-	cursor: pointer;
+  cursor: pointer;
 }
 a {
-	text-decoration: none;
-	color: inherit !important;
+  text-decoration: none;
+  color: inherit !important;
 }
 a:link {
-	color: inherit !important;
+  color: inherit !important;
 }
 
 img {
-	cursor: pointer;
+  cursor: pointer;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 input {
-	border: 0;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 140%;
-	color: #2b2b2b;
-	background-color: transparent;
+  border: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #2b2b2b;
+  background-color: transparent;
 }
 input:focus {
-	outline: none;
+  outline: none;
 }
 table {
-	width: 100%;
-	border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 tbody {
-	display: grid;
-	grid-auto-flow: row;
-	row-gap: 20px;
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 20px;
 }
 tr {
-	display: flex;
-	border-radius: 20px;
-	padding: 12px 20px;
-	background-color: #3b3b3b;
-	border-radius: 20px;
-	gap: 20px;
-	align-items: center;
+  display: flex;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #3b3b3b;
+  border-radius: 20px;
+  gap: 20px;
+  align-items: center;
 }
 
 th,
 td {
-	text-align: start;
-	display: flex;
-	column-gap: 20px;
-	align-items: center;
+  text-align: start;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
 }
 
-@media screen and (max-width: 834px) {
-	h1 {
-		font-weight: 600;
-		font-size: 38px;
-		line-height: 120%;
-	}
+/* Styles for  the tablet  */
 
-	h2 {
-		font-weight: 600;
-		font-size: 28px;
-		line-height: 140%;
-	}
-	h3 {
-		font-weight: 600;
-		font-size: 16px;
-		line-height: 140%;
-	}
-
-	span {
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 140%;
-	}
-
-	p {
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 22.4px;
-	}
+@media (min-width: 834px) and (max-width: 1279px) {
+  h1 {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+  }
+  h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
 }
 
-@media screen and (max-width: 375px) {
-	h1 {
-		font-weight: 600;
-		font-size: 28px;
-		line-height: 120%;
-	}
-	h2 {
-		font-weight: 600;
-		font-size: 28px;
-		line-height: 140%;
-	}
-	h3 {
-		font-weight: 600;
-		font-size: 16px;
-		line-height: 140%;
-	}
+/* styles for the mobile  */
+
+@media (max-width: 833px) {
+  h1 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+  }
+  h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
 }
