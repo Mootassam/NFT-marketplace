@@ -317,6 +317,11 @@ nav > ul > li:nth-last-child(1) {
   justify-content: space-between;
   align-items: flex-end;
 }
+.container__title {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
 .creator__number {
   background-color: var(--background);
   width: 30px;
@@ -364,17 +369,60 @@ nav > ul > li:nth-last-child(1) {
 
 /* Styles for the tablet */
 @media (min-width: 834px) and (max-width: 1279px) {
+  .container__title > span {
+    max-width: 343px;
+  }
+  .container__creator {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  }
+  .creator {
+    display: flex;
+    gap: 20px;
+    width: fit-content;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .creator > img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+  }
+  .creator__detaill {
+    text-align: start;
+  }
 }
 
 /* Styles for the mobile */
 
 @media (max-width: 833px) {
+  .container__title > span {
+    max-width: 100%;
+  }
+  .container__ > .button__traparent {
+    display: none;
+  }
+  .creator {
+    display: flex;
+    gap: 20px;
+    width: fit-content;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .creator > img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+  }
 }
 
 /* stlying the browse  */
 
 .container__browse {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   flex-wrap: wrap;
   width: 100%;
   gap: 30px;
@@ -383,9 +431,8 @@ nav > ul > li:nth-last-child(1) {
   background-color: var(--gray);
   display: flex;
   flex-direction: column;
-  border-radius: 20px 20px 0px 0px;
   border-radius: 20px;
-  max-width: 240px;
+  width: fit-content;
 }
 .browse__image {
   max-height: 240px;
@@ -410,15 +457,27 @@ nav > ul > li:nth-last-child(1) {
   background-color: var(--gray);
   z-index: 2;
   padding: 20px;
+  border-radius: 0 0 20px 20px;
 }
 
 /* Styles for the tablet */
 @media (min-width: 834px) and (max-width: 1279px) {
+  .container__browse {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    width: 100%;
+    gap: 30px;
+  }
 }
 
 /* Styles for the mobile */
 
 @media (max-width: 833px) {
+  .container__browse {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 19.5px;
+  }
 }
 
 /* styling the more section  */
@@ -456,6 +515,9 @@ nav > ul > li:nth-last-child(1) {
 
 /* Styles for the tablet */
 @media (min-width: 834px) and (max-width: 1279px) {
+  .container__more > div:nth-last-child(1) {
+    display: none;
+  }
 }
 
 /* Styles for the mobile */
@@ -472,7 +534,6 @@ nav > ul > li:nth-last-child(1) {
       #a259ff 100%
     ),
     url("/assets/image/NFT.png");
-
   height: 640px;
   background-position: center;
   background-repeat: no-repeat;
@@ -598,30 +659,81 @@ nav > ul > li:nth-last-child(1) {
 /* styling the how it works */
 
 .container__works {
-  display: flex;
+  display: grid;
   gap: 30px;
   align-items: baseline;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
 }
 
 .work {
   border-radius: 20px;
   background-color: var(--gray);
-  width: 330px;
   padding: 30px;
   display: grid;
   place-items: center;
   text-align: center;
   row-gap: 10px;
   height: 439px;
+  width: fit-content;
+  align-items: stretch;
+}
+.work > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 
 /* Styles for the tablet */
 @media (min-width: 834px) and (max-width: 1279px) {
+  .work {
+    border-radius: 20px;
+    background-color: var(--gray);
+    padding: 23.33px 20px 30px 20px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    row-gap: 10px;
+    height: 337px;
+    width: fit-content;
+  }
+  .work p {
+    font-size: 12px;
+  }
+
+  .work > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
 }
 
 /* Styles for the mobile */
 
 @media (max-width: 833px) {
+  .container__works {
+    display: flex;
+    flex-direction: column;
+  }
+  .work {
+    display: flex;
+    column-gap: 20px;
+    padding: 20px;
+    height: auto;
+    text-align: start;
+    width: 100%;
+  }
+  .work > img {
+    height: 99px;
+  }
+  .work > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .work p {
+    font-size: 12px;
+  }
 }
 
 /* styling the .join__us */
